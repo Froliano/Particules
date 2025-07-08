@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Particule.cpp" />
     <ClCompile Include="Particules.cpp" />
+    <ClCompile Include="ParticulesManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Particule.hpp" />
+    <ClInclude Include="ParticulesManager.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
