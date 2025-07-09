@@ -7,9 +7,7 @@ int main()
     sf::RenderWindow window(sf::VideoMode(800, 600), "Particules");
 
     window.setFramerateLimit(60);
-	std::vector<Particule*> particules;
-    particules.push_back(new Particule(400, 300, 0.1f, 0.1f, 5.0f, 3.0f, 3));
-
+	
 	ParticulesManager particulesManager;
 
     while (window.isOpen())

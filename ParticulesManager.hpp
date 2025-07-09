@@ -14,6 +14,7 @@ private:
 	std::uniform_int_distribution<> radius;
 	std::uniform_int_distribution<> dupCount;
 	std::uniform_int_distribution<> particulesCreate;
+	std::uniform_int_distribution<> randomColor;
 
 	sf::Vector2f normalize(sf::Vector2f vector);
 	void duplicateParticule(Particule* particule);
@@ -22,6 +23,6 @@ public:
 	ParticulesManager();
 	void update(sf::RenderWindow& window);
 	void createParticule(float x, float y);
-	void createParticule(float x, float y, int duplicationCountValue);
+	void createParticule(float x, float y, float r, sf::Color color, int duplicationCountValue);
 
 };
